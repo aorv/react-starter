@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
 
     return (
-      <React.Fragment>
+      <>
         <Header />
         <div className="p-4 md:p-16">
           <Switch>
@@ -21,7 +21,7 @@ class App extends React.Component {
           </Switch>
         </div>
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }
