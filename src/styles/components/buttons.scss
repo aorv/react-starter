@@ -1,4 +1,4 @@
-.button {
+.c-btn {
   @apply inline-block bg-primary text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out mr-4;
 
   &:hover {
@@ -7,10 +7,18 @@
 
   &:disabled,
   &[disabled] {
-    @apply bg-gray-500;
+    @apply bg-gray-500 cursor-not-allowed;
   }
 
   &:last-child {
     @apply mr-0;
+  }
+
+  &--secondary {
+    @apply bg-secondary;
+
+    &:hover {
+      @apply bg-primary;
+    }
   }
 }

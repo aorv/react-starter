@@ -4,7 +4,8 @@ import classNames from 'classnames';
 
 export const Button = ({
   children,
-  secondary,
+  variant,
+  type,
   loading,
   disabled,
   accessibilityLabel,
@@ -13,9 +14,9 @@ export const Button = ({
   className
 }) => {
   const buttonClassNames = classNames(
-    'button',
+    'c-btn',
     {
-      'button--secondary': secondary,
+      [`c-btn--${variant}`]: variant,
       'cursor-not-allowed': disabled
     },
     className
@@ -48,7 +49,7 @@ export const Button = ({
 
   return (
     <button
-      type="button"
+      type={type ? type : "button"}
       className={buttonClassNames}
       onClick={e => onClickHandler(e)}
       disabled={disabled || loading}

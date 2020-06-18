@@ -9,7 +9,9 @@ export const Home = () => (
     <p className="w-1/2 text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat! Ratione quia maiores quas nisi culpa libero, non velit, aperiam maxime sint minus amet consectetur architecto distinctio quod cumque quae!</p>
     <div className="text-center my-8">
       <Button>Button</Button>
+      <Button variant="secondary">Button</Button>
       <Button to="/about">Link</Button>
+      <Button type="submit">Submit</Button>
       <Button loading>Link</Button>
       <Button disabled>Link</Button>
     </div>
