@@ -1,0 +1,7 @@
+.c-nav-link {
+  @apply text-primary px-8 transition duration-200 ease-in-out;
+
+  &:hover {
+    @apply text-secondary;
+  }
+}

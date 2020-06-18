@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "react-app",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "jsx-quotes": [
+      1,
+      "prefer-double"
+    ],
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/jsx-fragments": [
+      2,
+      "syntax"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "none"
+      }
+    ],
+    "react/prop-types": [
+      0
+    ]
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "./src/**/*"
+      ],
+      "excludedFiles": "./src/**/*.md"
+    }
+  ]
+}
